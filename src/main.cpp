@@ -1,4 +1,5 @@
 #include <Geode/Geode.hpp>
+#include <Geode/modify/PlayLayer.hpp>
 #include <hiimjustin000.icon_randomizer_api/include/IconRandomizer.hpp>
 
 using namespace geode::prelude;
