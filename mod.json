@@ -7,14 +7,48 @@
         "ios": "2.2081"
     },
     "version": "1.0.0",
-    "id": "MalikHw.randomize-icons-in-game",
-    "name": "randomize-icons-in-game",
-    "developer": "MalikHw",
-    "description": "desc.",
-    "tags": ["yes", "yeah"],
+    "id": "malikhw47.randomize-icons-in-game",
+    "name": "randomize icons in game",
+    "developer": "MalikHw47",
+    "description": "Randomizes the player icon mid gameplay.",
+    "tags": ["gameplay", "joke"],
     "links": {
         "source": "https://github.com/MalikHw/randomize-icons-in-game",
         "community": "https://discord.gg/G9bZ92eg2n"
     },
-    "settings": {}
+        "dependencies": {
+        "hiimjustin000.icon_randomizer_api": ">=v3.0.0"
+    },
+    "settings": {
+        "enabled": {
+            "name": "toggle",
+            "description": "toggle",
+            "type": "bool",
+            "default": true
+        },
+        "mode": {
+            "name": "Random Mode",
+            "description": "choose between time-based or portal-based",
+            "type": "string",
+            "default": "time",
+            "options": [
+                "time",
+                "portal"
+            ]
+        },
+        "interval": {
+            "name": "Time Interval (seconds)",
+            "description": "time between icon changes (only for time-based mode)",
+            "type": "int",
+            "default": 5,
+            "min": 1,
+            "max": 60
+        },
+        "change-colors": {
+            "name": "Change Colors",
+            "description": "randomize player colors when icons randomized",
+            "type": "bool",
+            "default": true
+        }
+    }
 }
